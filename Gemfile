@@ -8,7 +8,10 @@ gem 'rails', '3.2.0'
 gem 'sqlite3'
 gem 'devise'
 gem 'pg'
-
+group :development do
+  gem 'taps'
+  gem 'rvm'
+end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
