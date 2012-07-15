@@ -1,4 +1,8 @@
 Practice::Application.routes.draw do
+  resources :comments
+
+  resources :reviews
+
   devise_for :users
 
   resources :homes

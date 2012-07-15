@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @review.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @review.description %>
+</p>
+
+<%= form_for Comment.new(:commentable => @review) do |r| %>
+<%= r.hidden_field :commentable_id %>
+<%= r.hidden_field :commentable_type %>
+<p><%= r.text_area :content %></p>
+<%= r.submit %>
+<% end %>
+
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Back', reviews_path %>
