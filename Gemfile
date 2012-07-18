@@ -37,5 +37,8 @@ gem 'jquery-rails'
 # Deploy with Capistrano
 # gem 'capistrano'
 
+gem "haml"
+gem "haml-rails"
+
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
