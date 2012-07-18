@@ -10,6 +10,8 @@ gem "paperclip", "~> 3.0"
 
 gem 'sqlite3', :group => [:development, :test]
 gem 'pg', :group => [:production]
+gem 'heroku'
+gem 'heroku-api'
 
 # Gems used only for assets and not required
 # in production environments by default.
