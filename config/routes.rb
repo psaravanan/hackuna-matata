@@ -1,4 +1,6 @@
 Practice::Application.routes.draw do
+  resources :albums
+
   resources :comments
 
   resources :reviews

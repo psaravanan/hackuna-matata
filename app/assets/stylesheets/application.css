@@ -11,3 +11,51 @@
  *= require_self
  *= require_tree .
 */
+#header{
+width:100%;
+}
+#welcome {
+text-align: center;
+background: darkblue;
+padding: 20px 10px;
+width: 93%;
+color: #DEF;
+margin: 0 auto;
+border-radius: 5px;
+font-weight: bold;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: .2s;
+-webkit-animation-timing-function: ease;
+-webkit-animation-fill-mode: both;
+-moz-animation-duration: 1s;
+-moz-animation-delay: .2s;
+-moz-animation-timing-function: ease;
+-moz-animation-fill-mode: both;
+-ms-animation-duration: 1s;
+-ms-animation-delay: .2s;
+-ms-animation-timing-function: ease;
+-ms-animation-fill-mode: both;
+-o-animation-duration: 1s;
+-o-animation-delay: .2s;
+-o-animation-timing-function: ease;
+-o-animation-fill-mode: both;
+animation-duration: 1s;
+animation-delay: .2s;
+animation-timing-function: ease;
+animation-fill-mode: both;
+}
+#sign_info{
+float: right;
+}
+#username{
+text-transform: capitalize;
+}
+#sign_info a{
+color: #DEF;
+text-decoration: none;
+font-size: 10px;
+}
+#welcome span a{
+color:white !important;
+margin-right: 10px;
+}
