@@ -59,3 +59,13 @@ font-size: 10px;
 color:white !important;
 margin-right: 10px;
 }
+.sign-in{
+border: 2px solid gray;
+margin: 0 auto;
+float:left;
+text-align: center;
+width: 600px;
+margin: 5% 30%;
+border-top:2px solid lightgray;
+border-bottom:2px solid lightgray;
+}

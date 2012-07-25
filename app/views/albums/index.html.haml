@@ -2,19 +2,20 @@
 
 %table
   %tr
+    %th Movie
     %th Description
     %th Title
-    %th
-    %th
-    %th
+    %th Actions
 
   - @albums.each do |album|
     %tr
+      %td= image_tag album.photo(:medium)
       %td= album.description
       %td= album.name
-      %td= link_to 'Show', album
-      %td= link_to 'Edit', edit_album_path(album)
-      %td= link_to 'Destroy', album, :confirm => 'Are you sure?', :method => :delete
+      %td
+        = link_to 'Show', album
+        = link_to 'Edit', edit_album_path(album)
+        = link_to 'Destroy', album, :confirm => 'Are you sure?', :method => :delete
 
 %br
 

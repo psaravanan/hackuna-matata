@@ -7,7 +7,7 @@ gem 'rails', '3.2.0'
 
 gem 'devise'
 gem "paperclip", "~> 3.0"
-
+gem 'newrelic_rpm'
 gem 'sqlite3', :group => [:development, :test]
 gem 'pg', :group => [:production]
 gem 'heroku'
