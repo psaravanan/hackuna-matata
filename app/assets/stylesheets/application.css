@@ -11,12 +11,25 @@
  *= require_self
  *= require_tree .
 */
+body{
+overflow: hidden;
+background: #333 !important;
+color: white !important;
+}
 #header{
 width:100%;
 }
+a{
+text-decoration:none;
+color: white !important;
+}
+a:hover{
+color:white !important;
+text-decoration:underline;
+}
 #welcome {
 text-align: center;
-background: darkblue;
+background: rgba(10, 10, 10, 0.5);
 padding: 20px 10px;
 width: 93%;
 color: #DEF;
@@ -68,4 +81,140 @@ width: 600px;
 margin: 5% 30%;
 border-top:2px solid lightgray;
 border-bottom:2px solid lightgray;
+}
+.wrapper div {
+	position: absolute;
+}
+.settings, nav {
+	position: fixed;
+	z-index: 9999999;
+	bottom: 0;
+	background: rgba(10,10,10, 0.5);
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+nav {
+	left: 0;
+	border-radius: 0 10px 0 0;
+}
+nav li {
+	float: left;
+}
+nav a {
+	display: block;
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	text-align: center;
+	transition: 0.25s;
+}
+nav li:last-child a {
+	border-radius: 0 10px 0 0;
+}
+nav a:hover {
+	background: none;
+  text-decoration: underline;
+}
+.settings {
+	right: 0;
+	padding: 10px 20px;
+	border-radius: 10px 0 0 0;
+}
+.settings a {
+	border: none;
+}
+ul li{
+list-style: none;
+}
+ul li a{
+color: white !important;
+text-decoration: none;
+}
+.demo { 
+	width: 800px;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.demo .arrow {
+	font-size: 20px;
+	animation: point-down 0.5s alternate infinite;
+}
+
+.description {
+	top: 740px;
+	left: 180px;
+	width: 440px;
+}
+
+.syntax {
+	top: 1525px;
+	left: 430px;
+	width: 400px;
+}
+
+.scrollbar {
+	top: 1530px;
+	left: 1600px;
+	width: 400px;
+}
+.follow {
+	width: 475px;
+	left: 1100px;
+	top: -950px;
+	font-size: 2em;
+	transform: rotate(90deg) translateX(50px);
+}
+.big {
+	display: block;
+	font-weight: bold;
+	line-height: 1.3em;
+	margin-top: -45px;
+	text-shadow: 
+		2px 2px 0 transparent,
+		4px 4px 0 #101010;
+}
+.highlight {
+	animation: highlight 0.2s alternate 6 ;
+}
+
+@keyframes point-down {
+	from {
+		top: 0;
+	}
+	to {
+		top: 5px;
+	}
+}
+.source {
+	left: 2219px;
+	top: -800px;
+	width: 400px;
+	-webkit-transform: rotate(90deg) translateX(50px);
+	font-size: 2em;
+}
+.follow {
+	width: 475px;
+	left: 1100px;
+	top: -950px;
+	-webkit-transform: rotate(90deg) translateX(50px);
+}
+@keyframes highlight {
+	to {
+		background: lightblue;
+	}
+}
+.rotations {
+	left: 2208px;
+	top: 660px;
+	width: 460px;
+	-webkit-transform: rotate(-90deg) translateY(2.5em);
+}
+.rotations .upside-down {
+	font-size: 2em;
+	text-align: right;
+	margin-bottom: -45px;
+	-webkit-transform: rotate(180deg) translateY(3em);
 }
