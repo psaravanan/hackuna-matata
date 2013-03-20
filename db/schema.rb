@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120819130036) do
+ActiveRecord::Schema.define(:version => 20130320102733) do
 
   create_table "albums", :force => true do |t|
     t.string   "description"
@@ -42,6 +42,17 @@ ActiveRecord::Schema.define(:version => 20120819130036) do
     t.text     "content"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "messages", :force => true do |t|
+    t.string   "content"
+    t.text     "message"
+    t.integer  "user_id"
+    t.boolean  "is_guest",    :default => false
+    t.string   "guest_name"
+    t.string   "guest_email"
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
   end
 
   create_table "reviews", :force => true do |t|

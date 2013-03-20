@@ -1,4 +1,6 @@
 Practice::Application.routes.draw do
+  resources :messages
+
   resources :chats
 
   resources :albums

@@ -6,9 +6,12 @@ gem 'rails', '3.2.0'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'devise'
-gem "paperclip", "~> 3.0"
+gem "paperclip", "~> 3.2.0"
 gem 'newrelic_rpm'
 gem 'sqlite3', :group => [:development, :test]
+gem 'execjs'
+gem 'therubyracer', :platforms => :ruby
+gem 'rb-readline'
 gem 'pg', :group => [:production]
 gem 'heroku'
 gem 'heroku-api'
@@ -26,7 +29,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
+gem 'private_pub'
+gem 'thin'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

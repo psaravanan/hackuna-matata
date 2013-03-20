@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Content:
+  = @message.content
+%p
+  %b Message:
+  = @message.message
+%p
+  %b User:
+  = @message.user_id
+%p
+  %b Is guest:
+  = @message.is_guest
+%p
+  %b Guest name:
+  = @message.guest_name
+%p
+  %b Guest email:
+  = @message.guest_email
+
+= link_to 'Edit', edit_message_path(@message)
+\|
+= link_to 'Back', messages_path
