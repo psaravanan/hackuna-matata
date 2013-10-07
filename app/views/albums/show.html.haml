@@ -1,0 +1,14 @@
+%p#notice= notice
+
+%p
+  = image_tag @album.photo
+%p
+  %b Name:
+  = @album.name
+%p
+  %b Description:
+  = @album.description
+
+= link_to 'Edit', edit_album_path(@album)
+\|
+= link_to 'Back', albums_path

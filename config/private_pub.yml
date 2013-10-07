@@ -1,0 +1,10 @@
+development:
+  server: "http://fayeredis.herokuapp.com/faye"
+  secret_token: "secret"
+test:
+  server: "http://fayeredis.herokuapp.com/faye"
+  secret_token: "secret"
+production:
+  server: "http://fayeredis.herokuapp.com/faye"
+  secret_token: "d4ea32d1dd13f37e48464dad89496acc55ab9dbc67570ba221369ad6ca344456"
+  signature_expiration: 3600 # one hour

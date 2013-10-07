@@ -1,0 +1,18 @@
+- if user_signed_in?
+  #header
+    #welcome.swing
+      %span
+        = link_to "Home", homes_path
+      %span
+        = link_to "Movie Reviews", reviews_path
+      %span
+        = link_to "Photos", albums_path
+
+      #sign_info
+        %span#username
+          = current_user.username
+        = link_to "Sign out", destroy_user_session_path, :method => :delete
+- else
+  /
+    = link_to "Sign up", new_user_registration_path
+    or #{link_to "sign in", new_user_session_path}

@@ -1,0 +1,246 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+body{
+overflow: hidden;
+background: #333 !important;
+color: white !important;
+}
+#header{
+width:100%;
+}
+a{
+text-decoration:none;
+color: white !important;
+}
+a:hover{
+color:white !important;
+text-decoration:underline;
+}
+#welcome {
+text-align: center;
+background: rgba(10, 10, 10, 0.5);
+padding: 20px 10px;
+width: 93%;
+color: #DEF;
+margin: 0 auto;
+border-radius: 5px;
+font-weight: bold;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: .2s;
+-webkit-animation-timing-function: ease;
+-webkit-animation-fill-mode: both;
+-moz-animation-duration: 1s;
+-moz-animation-delay: .2s;
+-moz-animation-timing-function: ease;
+-moz-animation-fill-mode: both;
+-ms-animation-duration: 1s;
+-ms-animation-delay: .2s;
+-ms-animation-timing-function: ease;
+-ms-animation-fill-mode: both;
+-o-animation-duration: 1s;
+-o-animation-delay: .2s;
+-o-animation-timing-function: ease;
+-o-animation-fill-mode: both;
+animation-duration: 1s;
+animation-delay: .2s;
+animation-timing-function: ease;
+animation-fill-mode: both;
+}
+#sign_info{
+float: right;
+}
+#username{
+text-transform: capitalize;
+}
+#sign_info a{
+color: #DEF;
+text-decoration: none;
+font-size: 10px;
+}
+#welcome span a{
+color:white !important;
+margin-right: 10px;
+}
+.sign-in{
+border: 2px solid gray;
+margin: 0 auto;
+float:left;
+text-align: center;
+width: 600px;
+margin: 5% 30%;
+border-top:2px solid lightgray;
+border-bottom:2px solid lightgray;
+}
+.wrapper div {
+	position: absolute;
+}
+.settings, nav {
+	position: fixed;
+	z-index: 9999999;
+	bottom: 0;
+	background: rgba(10,10,10, 0.5);
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+nav {
+	left: 0;
+	border-radius: 0 10px 0 0;
+}
+nav li {
+	float: left;
+}
+nav a {
+	display: block;
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	text-align: center;
+	transition: 0.25s;
+}
+nav li:last-child a {
+	border-radius: 0 10px 0 0;
+}
+nav a:hover {
+	background: none;
+  text-decoration: underline;
+}
+.settings {
+	right: 0;
+	padding: 10px 20px;
+	border-radius: 10px 0 0 0;
+}
+.settings a {
+	border: none;
+}
+ul li{
+list-style: none;
+}
+ul li a{
+color: white !important;
+text-decoration: none;
+}
+.demo { 
+	width: 800px;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.demo .arrow {
+	font-size: 20px;
+	animation: point-down 0.5s alternate infinite;
+}
+
+.description {
+	top: 740px;
+	left: 180px;
+	width: 440px;
+}
+
+.syntax {
+	top: 1525px;
+	left: 430px;
+	width: 400px;
+}
+
+.scrollbar {
+	top: 1530px;
+	left: 1600px;
+	width: 400px;
+}
+.follow {
+	width: 475px;
+	left: 1100px;
+	top: -950px;
+	font-size: 2em;
+	transform: rotate(90deg) translateX(50px);
+}
+.big {
+	display: block;
+	font-weight: bold;
+	line-height: 1.3em;
+	margin-top: -45px;
+	text-shadow: 
+		2px 2px 0 transparent,
+		4px 4px 0 #101010;
+}
+.highlight {
+	animation: highlight 0.2s alternate 6 ;
+}
+
+@keyframes point-down {
+	from {
+		top: 0;
+	}
+	to {
+		top: 5px;
+	}
+}
+.source {
+	left: 2219px;
+	top: -800px;
+	width: 400px;
+	-webkit-transform: rotate(90deg) translateX(50px);
+	font-size: 2em;
+}
+.follow {
+	width: 475px;
+	left: 1100px;
+	top: -950px;
+	-webkit-transform: rotate(90deg) translateX(50px);
+}
+@keyframes highlight {
+	to {
+		background: lightblue;
+	}
+}
+.rotations {
+	left: 2208px;
+	top: 660px;
+	width: 460px;
+	-webkit-transform: rotate(-90deg) translateY(2.5em);
+}
+.rotations .upside-down {
+	font-size: 2em;
+	text-align: right;
+	margin-bottom: -45px;
+	-webkit-transform: rotate(180deg) translateY(3em);
+}
+ul#chat {
+  list-style: none;
+  padding: 0;
+  width: 300px;
+  height: 150px;
+  border: solid 1px #777;
+  margin: 5px 0;
+  overflow: auto;
+}
+
+ul#chat li {
+  margin: 2px 5px;
+  padding: 0;
+}
+
+ul#chat li .created_at {
+  float: right;
+  color: #777;
+  font-size: 11px;
+  padding-left: 4px;
+  padding-top: 2px;
+}
+
+input#message_content {
+  width: 240px;
+}
