@@ -36,4 +36,11 @@ Practice::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+
+PUSHER_APP_ID = "27450"
+PUSHER_KEY = 'ae92a39e55b98a099d7a'
+PUSHER_SECRET = '18ad29b1cd084737496d'
+
+
 end

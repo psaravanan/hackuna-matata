@@ -36,7 +36,12 @@ class ChatsController < ApplicationController
   # POST /chats
   # POST /chats.json
   def create
+    Pusher.app_id = PUSHER_APP_ID
+    Pusher.key = PUSHER_KEY
+    Pusher.secret = PUSHER_SECRET
     @chat = Chat.create!(params[:chat])
+    x = render_to_string(:partial => "chat", locals: {chat: @chat})
+    Pusher["private-user-#{current_user.id}"].trigger('new-notification', x)
   end
 
   # PUT /chats/1

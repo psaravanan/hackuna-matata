@@ -1,10 +1,11 @@
+
+
 %h1 Public Chat
 %ul#chat_room
   = render @chats
 = form_for Chat.new, :remote => true do |f|
   = f.text_field :message
   = f.submit "Send"
-= subscribe_to "/chats/new"
 %nav
   %ul
     %li

@@ -29,7 +29,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'private_pub'
+#gem 'private_pub'
 gem 'thin'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -45,6 +45,6 @@ gem 'thin'
 
 gem "haml"
 gem "haml-rails"
-
+gem "pusher"
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'

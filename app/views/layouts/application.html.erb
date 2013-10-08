@@ -4,7 +4,23 @@
   <title>Practice</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <script src="http://js.pusher.com/2.1/pusher.min.js" type="text/javascript"></script>
   <%= csrf_meta_tags %>
+  <script type="text/javascript">
+    // Enable pusher logging - don't include this in production
+    Pusher.log = function(message) {
+      if (window.console && window.console.log) {
+        window.console.log(message);
+      }
+    };
+
+    var pusher = new Pusher("ae92a39e55b98a099d7a");
+    var channel = pusher.subscribe("private-user-1");
+    channel.bind('new-notification', function(data) {
+      console.log(data);
+      $("#chat_room").append(data);
+    });
+  </script>
 </head>
 <body>
 <%= render "shared/header" %>
