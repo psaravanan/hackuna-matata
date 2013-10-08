@@ -3,11 +3,7 @@ class ChatsController < ApplicationController
   # GET /chats.json
   def index
     @chats = Chat.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @chats }
-    end
+    #render layout: false
   end
 
   # GET /chats/1

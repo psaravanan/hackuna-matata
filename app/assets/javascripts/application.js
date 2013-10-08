@@ -14,11 +14,3 @@
 //= require jquery_ujs
 //= require private_pub
 //= require_tree .
-PrivatePub.subscribe("/messages/new", function(data, channel) {
-  $('.test_class').text('color','red');
-  //console.log(data.chat_message.content);
-});
-
-$(function() {
-
-});
