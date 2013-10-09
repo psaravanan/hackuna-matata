@@ -1,7 +1,10 @@
 class ChatsController < ApplicationController
   # GET /chats
   # GET /chats.json
+  skip_before_filter :authenticate_user!
   def index
+    p "request.subdomain"
+    p request.subdomain
     @chats = Chat.all
     #render layout: false
   end
@@ -41,7 +44,7 @@ class ChatsController < ApplicationController
     Pusher.secret = PUSHER_SECRET
     @chat = Chat.create!(params[:chat])
     x = render_to_string(:partial => "chat", locals: {chat: @chat})
-    Pusher["private-user-#{current_user.id}"].trigger('new-notification', x)
+    Pusher["private-user-#{current_user.id}"].trigger("new-notification", x)
   end
 
   # PUT /chats/1
