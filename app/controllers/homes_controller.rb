@@ -1,4 +1,5 @@
 class HomesController < ApplicationController
+  before_filter :authenticate_user!
   # GET /homes
   # GET /homes.json
   def index
