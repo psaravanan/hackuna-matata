@@ -57,6 +57,9 @@ GEM
     excon (0.14.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    figaro (0.7.0)
+      bundler (~> 1.0)
+      rails (>= 3, < 5)
     haml (3.1.6)
     haml-rails (0.3.4)
       actionpack (~> 3.0)
@@ -184,6 +187,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
   execjs
+  figaro
   haml
   haml-rails
   heroku

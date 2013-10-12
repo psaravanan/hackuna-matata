@@ -2,6 +2,7 @@
   #header
     #welcome.swing
       %span
+        = ENV["APP_NAME"]
         = link_to "Home", homes_path
       %span
         = link_to "Movie Reviews", reviews_path
