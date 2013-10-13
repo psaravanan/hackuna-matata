@@ -52,5 +52,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.0'
 end
 gem "figaro"
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
